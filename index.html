@@ -1,0 +1,60 @@
+((<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div  class="calcDiv">
+                <div class="display">
+                    <input type="text" name="Hello" id="inputbox" style="width: 90%;">
+                </div>
+                <div>
+                    <!-- <button class="operator del" onclick="clearButton()">DEl</button> -->
+                    <button class="operator" onclick="getNumber ('.')">.</button>
+                    <button class="operator" onclick="getNumber('/')">/</button>
+                    <button class="operator  ac" onclick="clearButton()" style="width: 140px;" >AC</button>
+                    <!-- <input type="button" value=""> -->
+                </div>
+                <div>
+                    <button onclick="getNumber(7)">7</button>
+                    <button onclick="getNumber(8)">8</button>
+                    <button onclick="getNumber(9)">9</button>
+                    <button class="operator" onclick="getNumber('*')">*</button>
+                    <!-- <input type="button" value=""> -->
+                </div>
+                <div>
+                    <button onclick="getNumber(4)">4</button>
+                    <button onclick="getNumber(5)">5</button>
+                    <button onclick="getNumber(6)">6</button>
+                    <button class="operator" onclick="getNumber('-')">-</button>
+                    <!-- <input type="button" value=""> -->
+                </div>
+                <div>
+                    <button onclick="getNumber(1)">1</button>
+                    <button onclick="getNumber(2)">2</button>
+                    <button onclick="getNumber(3)">3</button>
+                    <button class="operator" onclick="getNumber('+')">+</button>
+                    <!-- <input type="button" value=""> -->
+                </div>
+                <div>
+                    <button onclick="getNumber(0)">0</button>
+                        <button class="operator" style="width: 145px" onclick="calculator('=')">=</button>
+                    <!-- <input type="button" value="=" class="equal"> -->
+                    <!-- <input type="button" value=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
